@@ -1,0 +1,58 @@
+<h2>Formulário Produto</h2>
+<div class="container">
+    <form onsubmit="saveProduto(event)">
+        <div class="row"> <!-- row = "linha" em ingles -->
+            <div class="col-lg-6"> <!-- ocupar 6 colunas (lg = large)-->
+                <div class="form-group">
+                    <label class="Nome">Nome: </label>
+                    <input class="form-control" type="text" name="nome">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="Descricao">Descrição: </label>
+                    <input class="form-control" type="text" name="descricao">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label class="Preco">Preço: </label>
+                    <input step="0.01" class="form-control" type="number" name="preco">
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label class="Estoque">Estoque: </label>
+                    <input class="form-control" type="number" name="estoque">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="URL">URL Imagem: </label>
+                    <input class="form-control" type="url" name="image">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="Categoria">Categoria: </label>
+                    <select class="form-control" id="categoria_select" name="categoria">
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <button class="form-control btn btn-success" type="submit">Salvar</button>
+            </div>
+        </div>
+    </form>
+</div>
